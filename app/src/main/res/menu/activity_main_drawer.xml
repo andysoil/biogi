@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/healthCheck"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="健檢" />
+        <item
+            android:id="@+id/suggest"
+            android:icon="@drawable/ic_menu_share"
+            android:title="營養建議" />
+        <item
+            android:id="@+id/fllowup"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="後續追蹤" />
+        <item
+            android:id="@+id/measureClass"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="量測" />
+        <item
+            android:id="@+id/talkroom"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="聊天室" />
+        <item
+            android:id="@+id/memberSetIn"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="帳號設定選項" />
+    </group>
+
+
+
+</menu>

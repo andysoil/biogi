@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".healthCheck.healthCheck">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="前"
+            android:id="@+id/less"
+            android:onClick="less"
+            android:layout_gravity="left|top"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/itemdate" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/itemdate"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="後"
+            android:id="@+id/add"
+            android:onClick="add"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/itemdate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="doctor"
+            android:id="@+id/doctor"
+            android:layout_below="@+id/itemdate"
+            android:layout_alignStart="@+id/less"
+            android:layout_alignEnd="@+id/add" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+</FrameLayout>
